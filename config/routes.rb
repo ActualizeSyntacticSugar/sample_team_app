@@ -4,6 +4,12 @@ Rails.application.routes.draw do
 
     get "/test" => "test#index"
 
+    get "/tea" => "tea#index"
+    post "/tea" => "tea#create"
+    get "/tea/:id" => "tea#show"
+    patch "/tea/:id" => "tea#update"
+    delete "/tea/:id" => "tea#destroy"
+
     get "/peters" => "peters#index"
   end
 end
