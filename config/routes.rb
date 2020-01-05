@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   namespace :api do
     get "/pages" => "pages#index"
 
+    get "/test" => "test#index"
+
     get "/tea" => "tea#index"
     post "/tea" => "tea#create"
     get "/tea/:id" => "tea#show"
