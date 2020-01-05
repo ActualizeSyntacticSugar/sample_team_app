@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   namespace :api do
+    get "/testing" => "testing#index"
+
     get "/pages" => "pages#index"
 
     get "/tea" => "tea#index"
