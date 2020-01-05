@@ -7,5 +7,7 @@ Rails.application.routes.draw do
     get "/tea/:id" => "tea#show"
     patch "/tea/:id" => "tea#update"
     delete "/tea/:id" => "tea#destroy"
+
+    get "/peters" => "peters#index"
   end
 end
